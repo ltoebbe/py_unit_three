@@ -4,12 +4,9 @@
 import math
 
 
-def s(a, b, c):
-    (a+b+c)/2
+def area(a, b, c):
+    s = (a + b + c) / 2
+    return math.sqrt(2)(s * (s - a) * (s - b) * (s - c))
 
 
-def area(s, a, b, c):
-    math.sqrt(2)(s * (s - a) * (s - b) * (s - c))
-
-
-print(area(3, 2, 2, 2))
+print(area(2, 2, 2))
